@@ -26,23 +26,27 @@ document.getElementById("myContactForm").addEventListener("submit", (event) => {
 
     // Check captcha
     grecaptcha.ready(function() {
-        grecaptcha.execute('6LdPRSMlAAAAAHZsaeHTCqiPFtzxp9qLcc1PKV-c', { action: 'submit' }).then(function(token) {
-            var recaptchaResponse = document.getElementById('g-recaptcha-response');
-            recaptchaResponse.value = token;
+        grecaptcha.execute('6LdPRSMlAAAAAHZsaeHTCqiPFtzxp9qLcc1PKV-c', { action: 'submit' })
+            .then(function(token) {
+                var recaptchaResponse = document.getElementById('g-recaptcha-response');
+                recaptchaResponse.value = token;
 
-            if (recaptchaResponse.value) {
-                const data = {
-                    name: nameInput.value,
-                    email: emailInput.value,
-                    message: messageInput.value,
-                    phone: phoneInput.value
-                };
+                if (recaptchaResponse.value) {
+                    const data = {
+                        name: nameInput.value,
+                        email: emailInput.value,
+                        message: messageInput.value,
+                        phone: phoneInput.value
+                    };
 
-                postContactRequest(data);
-            } else {
-                alert('Bitte bestätigen Sie, dass Sie kein Roboter sind.');
-            }
-        });
+                    postContactRequest(data);
+                } else {
+                    alert('Bitte bestätigen Sie, dass Sie kein Roboter sind.');
+                }
+            })
+            .catch((error) => {
+                console.error(error);
+            });;
     });
 })
 
