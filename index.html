@@ -1,1 +1,198 @@
-Hello World
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- CSS -->
+    <link rel="stylesheet" href="css/style.css">
+    <link rel="stylesheet" href="css/header.css">
+    <link rel="stylesheet" href="css/contact.css">
+    <link rel="stylesheet" href="css/footer.css">
+
+    <!-- JavaScript -->
+    <script src="js/animation.js" defer></script>
+    <script src="js/toggle.js" defer></script>
+
+    <!-- Google Recaptcha -->
+    <script src="https://www.google.com/recaptcha/api.js?render=6LdPRSMlAAAAAHZsaeHTCqiPFtzxp9qLcc1PKV-c"></script>
+
+    <!-- FontAwesome -->
+    <script src="https://kit.fontawesome.com/85e6e6181b.js" crossorigin="anonymous"></script>
+
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" />
+
+    <title>Hi.</title>
+</head>
+
+<body>
+
+    <body>
+        <header class="toolbar">
+            <div class="toolbar-content">
+                <div class="tab-group animate glow delay-4">
+                    <a class="tab" href="#section1">Startseite</a>
+                    <a class="tab" href="#section2">Dienstleistungen</a>
+                    <!-- <a class="tab" href="#section3">Tools</a> -->
+                </div>
+                <!-- <div id="logoName">oreste creolese</div> -->
+                <div class="tab-controller">
+                    <div class="toggle-button animate glow delay-3">
+                        <div class="bar1"></div>
+                        <div class="bar2"></div>
+                        <div class="bar3"></div>
+                    </div>
+                    <a id="bookCallButton" class="animate glow delay-3" href="#section3">Jetzt anfragen!</a>
+                </div>
+            </div>
+
+        </header>
+        <main>
+            <section id="section1" class="center">
+                <div class="section-wrapper">
+                    <div class="animate glow delay-1">
+                        <h1>
+                            <span>Hi, mein Name ist Oreste.</span>
+                        </h1>
+                        <h3>
+                            Ich baue Dinge für das Internet.
+                        </h3>
+                    </div>
+                    <div class="hero-image-container animate glow delay-2">
+                        <img src="assets/me.png" alt="">
+                        <svg class="svg-shape" viewBox="0 0 100 100" xmlns="http://www.w3.org/2000/svg" version="1.1">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(255, 168, 75, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(255, 94, 105, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M21.7,-38.7C27.1,-34.4,29.7,-26.6,32.3,-19.5C34.8,-12.5,37.3,-6.2,36.8,-0.3C36.4,5.7,33,11.4,30,17.6C26.9,23.9,24.3,30.6,19.3,34C14.4,37.4,7.2,37.5,0.6,36.4C-6,35.3,-11.9,33.1,-17.5,30.1C-23.2,27.1,-28.5,23.3,-33,18.2C-37.6,13,-41.4,6.5,-41,0.3C-40.5,-6,-35.8,-12,-31.2,-16.9C-26.5,-21.9,-21.8,-25.9,-16.7,-30.3C-11.5,-34.8,-5.7,-39.7,1.2,-41.8C8.1,-43.9,16.3,-43.1,21.7,-38.7Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;" stroke="url(#sw-gradient)"></path></svg>
+                    </div>
+                </div>
+            </section>
+            <div id="dinoContainer">
+                <div id="dino">
+                </div>
+            </div>
+            <div id="fadeInContainer">
+                <svg id="wave" style="transform:rotate(180deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,245L40,245C80,245,160,245,240,212.3C320,180,400,114,480,130.7C560,147,640,245,720,302.2C800,359,880,376,960,392C1040,408,1120,425,1200,392C1280,359,1360,278,1440,245C1520,212,1600,229,1680,204.2C1760,180,1840,114,1920,81.7C2000,49,2080,49,2160,65.3C2240,82,2320,114,2400,114.3C2480,114,2560,82,2640,114.3C2720,147,2800,245,2880,302.2C2960,359,3040,376,3120,318.5C3200,261,3280,131,3360,81.7C3440,33,3520,65,3600,114.3C3680,163,3760,229,3840,245C3920,261,4000,229,4080,179.7C4160,131,4240,65,4320,57.2C4400,49,4480,98,4560,122.5C4640,147,4720,147,4800,122.5C4880,98,4960,49,5040,49C5120,49,5200,98,5280,155.2C5360,212,5440,278,5520,253.2C5600,229,5680,114,5720,57.2L5760,0L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,147L40,163.3C80,180,160,212,240,253.2C320,294,400,343,480,343C560,343,640,294,720,253.2C800,212,880,180,960,163.3C1040,147,1120,147,1200,138.8C1280,131,1360,114,1440,163.3C1520,212,1600,327,1680,310.3C1760,294,1840,147,1920,73.5C2000,0,2080,0,2160,57.2C2240,114,2320,229,2400,228.7C2480,229,2560,114,2640,81.7C2720,49,2800,98,2880,138.8C2960,180,3040,212,3120,212.3C3200,212,3280,180,3360,163.3C3440,147,3520,147,3600,171.5C3680,196,3760,245,3840,269.5C3920,294,4000,294,4080,253.2C4160,212,4240,131,4320,138.8C4400,147,4480,245,4560,294C4640,343,4720,343,4800,359.3C4880,376,4960,408,5040,400.2C5120,392,5200,343,5280,318.5C5360,294,5440,294,5520,261.3C5600,229,5680,163,5720,130.7L5760,98L5760,490L5720,490C5680,490,5600,490,5520,490C5440,490,5360,490,5280,490C5200,490,5120,490,5040,490C4960,490,4880,490,4800,490C4720,490,4640,490,4560,490C4480,490,4400,490,4320,490C4240,490,4160,490,4080,490C4000,490,3920,490,3840,490C3760,490,3680,490,3600,490C3520,490,3440,490,3360,490C3280,490,3200,490,3120,490C3040,490,2960,490,2880,490C2800,490,2720,490,2640,490C2560,490,2480,490,2400,490C2320,490,2240,490,2160,490C2080,490,2000,490,1920,490C1840,490,1760,490,1680,490C1600,490,1520,490,1440,490C1360,490,1280,490,1200,490C1120,490,1040,490,960,490C880,490,800,490,720,490C640,490,560,490,480,490C400,490,320,490,240,490C160,490,80,490,40,490L0,490Z"></path></svg>
+            </div>
+            <section id="section2" class="center mySection">
+                <h3>SERVICE</h3>
+                <div class="section-wrapper">
+                    <div class="skill-container square-wrapper">
+                        <div class="skill-item">
+                            <div class="skill-title">
+                                <div class="skill-icon-container">
+                                    <i class="fa-solid fa-pen-ruler"></i>
+                                    <svg class="skill-svg-shape" viewBox="20 6 70 82" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(255, 94, 105, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(255, 168, 75, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M13,-25.7C16.8,-20.3,19.8,-16.7,24.4,-12.8C28.9,-8.8,35.1,-4.4,38.3,1.9C41.5,8.1,41.8,16.2,36.6,19.1C31.4,22.1,20.8,19.8,13.8,22.8C6.8,25.8,3.4,33.9,0,34C-3.5,34,-6.9,26,-11.7,21.8C-16.5,17.5,-22.6,17.1,-24.5,14.1C-26.3,11.1,-23.9,5.5,-25.7,-1C-27.5,-7.6,-33.4,-15.1,-33.7,-21.9C-34.1,-28.8,-28.8,-34.8,-22.3,-38.6C-15.7,-42.4,-7.9,-43.9,-1.6,-41.1C4.6,-38.2,9.2,-31,13,-25.7Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                                </div>
+                                <h4>Projekte</h4>
+                            </div>
+                            <div class="skill-item-text">
+                                <p>Als Softwareentwickler biete ich maßgeschneiderte Softwarelösungen an, die Ihren spezifischen Bedürfnisse zugeschnitten sind.</p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-title">
+                                <div class="skill-icon-container">
+                                    <i class="fa-solid fa-person-chalkboard"></i>
+                                    <svg class="skill-svg-shape" viewBox="24 25 57 62" xmlns="http://www.w3.org/2000/svg">                    <defs><linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(255, 94, 105, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(255, 168, 75, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M24.3,-0.6C24.3,9.8,12.1,19.7,-0.3,19.7C-12.8,19.7,-25.6,9.8,-25.6,-0.6C-25.6,-11.1,-12.8,-22.2,-0.3,-22.2C12.1,-22.2,24.3,-11.1,24.3,-0.6Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                                </div>
+                                <h4>Schulung</h4>
+                            </div>
+                            <div class="skill-item-text">
+                                <p>Sie möchten sich endlich zum Entwickler umschulen? Und wissen nicht wo Sie starten sollen? Mit meinem "0 to 100" - Live-Kurs sind Sie hier genau richtig! </p>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <div class="skill-title">
+                                <div class="skill-icon-container">
+                                    <i class="fa-solid fa-graduation-cap"></i>
+                                    <svg class="skill-svg-shape" viewBox="24 25 57 62" xmlns="http://www.w3.org/2000/svg">                    <defs>                         <linearGradient id="sw-gradient" x1="0" x2="1" y1="1" y2="0">                            <stop id="stop1" stop-color="rgba(255, 94, 105, 1)" offset="0%"></stop>                            <stop id="stop2" stop-color="rgba(255, 168, 75, 1)" offset="100%"></stop>                        </linearGradient>                    </defs>                <path fill="url(#sw-gradient)" d="M6.4,-8.2C10.7,-8.6,18.3,-11.8,22.9,-10.9C27.5,-9.9,29.2,-5,30.9,1C32.5,6.9,34.2,13.8,30,15.4C25.8,17,15.7,13.4,9.7,15.5C3.7,17.7,1.9,25.7,-2.6,30.2C-7,34.6,-14,35.6,-17.5,31.9C-20.9,28.3,-20.7,20.1,-21.6,14C-22.6,7.9,-24.6,3.9,-26.1,-0.9C-27.6,-5.7,-28.5,-11.3,-26.7,-15.9C-24.9,-20.5,-20.5,-24.1,-15.5,-23.3C-10.6,-22.6,-5.3,-17.5,-2.1,-13.8C1,-10.1,2.1,-7.8,6.4,-8.2Z" width="100%" height="100%" transform="translate(50 50)" stroke-width="0" style="transition: all 0.3s ease 0s;"></path>              </svg>
+                                </div>
+                                <h4>Blog</h4>
+                            </div>
+                            <div class="skill-item-text">
+                                <p>In meinem kostenfreien Blog finden Sie eine umfangreiche Sammlung an nützliche Tutorials (Für Profis und Anfänger) und informativen Beiträgen.</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+            <section id="section3" class="center mySection">
+                <!-- <h3>Kontakt</h3> -->
+
+                <div class="section-wrapper contact-container">
+                    <div class="contact-info-container">
+                        <h1>Kontaktieren Sie mich!</h1>
+                        <div class="contact-info">
+                            Haben Sie ein Projekt im Sinn? Suchen Sie eine Partnerschaft oder Zusammenarbeit? Kontaktieren Sie mich über das Formular und ich werde mich innerhalb der nächsten 48 Stunden bei Ihnen melden.
+                        </div>
+                    </div>
+
+                    <div class="contact-form">
+                        <form id="myContactForm" action="#" method="post">
+                            <!-- Contact Form -->
+                            <div class="form-group">
+                                <label for="name">Name*</label>
+                                <input type="text" id="name" name="name" placeholder="Max Mustermann">
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email*</label>
+                                <input type="email" id="email" name="email" placeholder="max.mustermann@mail.de">
+                            </div>
+                            <div class="form-group">
+                                <label for="phone">Telefonnummer</label>
+                                <input type="tel" id="phone" name="phone" placeholder="0162/12345678">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Nachricht*</label>
+                                <textarea id="message" name="message" placeholder="Erzählen Sie mir ein wenig mehr darüber, wonach Sie suchen?"></textarea>
+                            </div>
+
+                            <div class="googlePolicyContainer">
+                                Diese Website ist durch reCAPTCHA geschützt und es gelten die
+                                <a href="https://policies.google.com/privacy">Datenschutzbestimmungen</a> und
+                                <a href="https://policies.google.com/terms">Nutzungsbedingungen</a> von Google.
+                            </div>
+
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+
+                            <!-- Submit Button -->
+                            <input type="hidden" id="g-recaptcha-response" name="g-recaptcha-response">
+                            <button id="contactSubmitButton" type="submit" data="Senden">
+                                <i class="fa fa-paper-plane gradient-icon"></i>
+                            </button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+            <!-- End of Site SVG -->
+            <svg id="wave" style="transform:rotate(0deg); transition: 0.3s" viewBox="0 0 1440 490" version="1.1" xmlns="http://www.w3.org/2000/svg"><defs><linearGradient id="sw-gradient-0" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(255, 179, 11, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 0px); opacity:1" fill="url(#sw-gradient-0)" d="M0,392L30,326.7C60,261,120,131,180,73.5C240,16,300,33,360,65.3C420,98,480,147,540,171.5C600,196,660,196,720,196C780,196,840,196,900,220.5C960,245,1020,294,1080,334.8C1140,376,1200,408,1260,400.2C1320,392,1380,343,1440,277.7C1500,212,1560,131,1620,106.2C1680,82,1740,114,1800,106.2C1860,98,1920,49,1980,81.7C2040,114,2100,229,2160,269.5C2220,310,2280,278,2340,236.8C2400,196,2460,147,2520,155.2C2580,163,2640,229,2700,285.8C2760,343,2820,392,2880,351.2C2940,310,3000,180,3060,122.5C3120,65,3180,82,3240,73.5C3300,65,3360,33,3420,89.8C3480,147,3540,294,3600,310.3C3660,327,3720,212,3780,138.8C3840,65,3900,33,3960,73.5C4020,114,4080,229,4140,285.8C4200,343,4260,343,4290,343L4320,343L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path><defs><linearGradient id="sw-gradient-1" x1="0" x2="0" y1="1" y2="0"><stop stop-color="rgba(243, 106, 62, 1)" offset="0%"></stop><stop stop-color="rgba(243, 106, 62, 1)" offset="100%"></stop></linearGradient></defs><path style="transform:translate(0, 50px); opacity:0.9" fill="url(#sw-gradient-1)" d="M0,392L30,334.8C60,278,120,163,180,155.2C240,147,300,245,360,269.5C420,294,480,245,540,220.5C600,196,660,196,720,196C780,196,840,196,900,228.7C960,261,1020,327,1080,310.3C1140,294,1200,196,1260,147C1320,98,1380,98,1440,122.5C1500,147,1560,196,1620,187.8C1680,180,1740,114,1800,81.7C1860,49,1920,49,1980,114.3C2040,180,2100,310,2160,334.8C2220,359,2280,278,2340,228.7C2400,180,2460,163,2520,171.5C2580,180,2640,212,2700,204.2C2760,196,2820,147,2880,138.8C2940,131,3000,163,3060,204.2C3120,245,3180,294,3240,318.5C3300,343,3360,343,3420,302.2C3480,261,3540,180,3600,163.3C3660,147,3720,196,3780,179.7C3840,163,3900,82,3960,57.2C4020,33,4080,65,4140,73.5C4200,82,4260,65,4290,57.2L4320,49L4320,490L4290,490C4260,490,4200,490,4140,490C4080,490,4020,490,3960,490C3900,490,3840,490,3780,490C3720,490,3660,490,3600,490C3540,490,3480,490,3420,490C3360,490,3300,490,3240,490C3180,490,3120,490,3060,490C3000,490,2940,490,2880,490C2820,490,2760,490,2700,490C2640,490,2580,490,2520,490C2460,490,2400,490,2340,490C2280,490,2220,490,2160,490C2100,490,2040,490,1980,490C1920,490,1860,490,1800,490C1740,490,1680,490,1620,490C1560,490,1500,490,1440,490C1380,490,1320,490,1260,490C1200,490,1140,490,1080,490C1020,490,960,490,900,490C840,490,780,490,720,490C660,490,600,490,540,490C480,490,420,490,360,490C300,490,240,490,180,490C120,490,60,490,30,490L0,490Z"></path></svg>
+        </main>
+        <!-- Footer -->
+
+        <!-- Site footer -->
+        <footer class="site-footer">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-8 col-sm-6 col-xs-12">
+                        <p class="copyright-text">Copyright &copy; 2023 All Rights Reserved by
+                            <a href="#">my</a>.
+                        </p>
+                    </div>
+
+                    <div class="col-md-4 col-sm-6 col-xs-12">
+                        <ul class="social-icons">
+                            <li><a class="facebook" href="#"><i class="fa fa-facebook"></i></a></li>
+                            <li><a class="twitter" href="#"><i class="fa fa-twitter"></i></a></li>
+                            <li><a class="dribbble" href="#"><i class="fa fa-dribbble"></i></a></li>
+                            <li><a class="linkedin" href="#"><i class="fa fa-linkedin"></i></a></li>
+                        </ul>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+
+    <script src="js/form.js"></script>
+</body>
+
+</html>

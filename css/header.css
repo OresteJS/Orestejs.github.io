@@ -1,0 +1,104 @@
+.toolbar {
+    position: fixed;
+    left: 0;
+    right: 0;
+    top: 0;
+    z-index: 100;
+    display: flex;
+    align-items: center;
+    background-color: white;
+    box-shadow: var(--shadow);
+}
+
+.toolbar-content {
+    width: 100%;
+    max-width: 1140px;
+    max-height: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 20px;
+    position: relative;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab-group {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.tab {
+    padding: 10px;
+    border-bottom: 2px solid transparent;
+    cursor: pointer;
+}
+
+.tab-controller {
+    display: flex;
+    width: 100%;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.toggle-button {
+    display: none;
+}
+
+
+/* Definieren der Styles für unterschiedliche Bildschirmgrößen */
+
+
+/* For Smartphone */
+
+@media only screen and (max-width: 767px) {}
+
+
+/* For Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {}
+
+
+/* For Tablet & Smartphone */
+
+@media screen and (max-width: 991px) {
+    .tab {
+        display: none;
+    }
+    .toggle-button {
+        display: block;
+    }
+    .toolbar-content {
+        justify-content: end;
+    }
+    .toolbar-content.active {
+        flex-wrap: wrap;
+        flex-direction: column-reverse;
+        box-shadow: var(--shadow);
+    }
+    .tab-group {
+        display: none;
+        flex-wrap: wrap;
+        width: 100%;
+        /* height: auto;
+        padding-bottom: 0;
+        overflow: auto; */
+    }
+    .tab-group.active {
+        display: block;
+    }
+    .tab-group .tab {
+        width: 100%;
+        text-align: left;
+        display: none;
+    }
+    .tab-group .tab.active {}
+    .tab-group.active .tab {
+        display: block;
+    }
+    .tab-controller {
+        justify-content: space-between;
+    }
+}

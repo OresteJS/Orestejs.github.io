@@ -1,0 +1,24 @@
+/* Definieren der Styles für unterschiedliche Bildschirmgrößen */
+
+
+/* For Smartphone */
+
+@media only screen and (max-width: 767px) {
+    section {
+        font-size: 1em;
+    }
+}
+
+
+/* For Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        font-size: 1.2em;
+    }
+}
+
+
+/* For Tablet & Smartphone */
+
+@media screen and (max-width: 991px) {}

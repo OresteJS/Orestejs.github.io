@@ -1,0 +1,184 @@
+.form-group {
+    margin-bottom: 50px;
+}
+
+.contact-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    row-gap: 20px;
+    column-gap: 50px;
+}
+
+.contact-info-container {
+    width: 45%;
+    max-width: 450px;
+}
+
+.contact-info {
+    margin-top: 36px;
+    color: var(--secondary-black);
+    font-size: 20px;
+    line-height: 36px;
+}
+
+.contact-form {
+    width: 55%;
+    max-width: 570px;
+}
+
+.form-group>label {
+    margin-bottom: 10px;
+    display: block;
+    margin-bottom: 5px;
+    font-weight: bold;
+}
+
+.form-group>input,
+.form-group>textarea {
+    box-shadow: var(--shadow) !important;
+    border-radius: var(--border-radius) !important;
+    background-color: #f2f6f7;
+    color: var(--primary-black);
+    padding: 10px;
+    font-size: 16px;
+    border-radius: 5px;
+    width: 100%;
+    display: block;
+    resize: vertical;
+}
+
+.form-group>input {
+    height: 50px;
+}
+
+.form-group>textarea {
+    height: 80px;
+    font-family: inherit;
+    font-size: inherit;
+}
+
+.form-group>input:focus,
+.form-group>textarea:focus {
+    outline: none;
+    border-color: var(--primary-black);
+}
+
+input:invalid,
+textarea:invalid {
+    border-color: rgb(255, 0, 0);
+}
+
+#contactSubmitButton {
+    padding: 15px 60px;
+    margin-top: 15px;
+    background: var(--primary-gradient);
+    font-weight: 700;
+    border-radius: var(--border-radius);
+    transition: 724ms;
+    transform: translateY(0);
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-evenly;
+    width: 150px;
+    column-gap: 10px;
+    cursor: pointer;
+    border: none;
+}
+
+#contactSubmitButton::before {
+    content: "";
+    position: absolute;
+    top: 1px;
+    right: 1px;
+    bottom: 1px;
+    left: 1px;
+    background-color: rgb(255, 255, 255);
+    border-radius: calc(var(--border-radius) - 1px);
+    z-index: -1;
+    transition: 200ms;
+}
+
+#contactSubmitButton::after {
+    content: attr(data);
+    font-size: 16px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+}
+
+#contactSubmitButton:hover::before {
+    opacity: 20%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#contactSubmitButton:active:before {
+    opacity: 0%;
+    top: 0px;
+    right: 0px;
+    bottom: 0px;
+    left: 0px;
+}
+
+#contactSubmitButton:hover::after {
+    color: white;
+}
+
+.gradient-icon {
+    font-size: 16px;
+    background: var(--primary-gradient);
+    -webkit-background-clip: text;
+    color: transparent;
+    transition: 200ms;
+}
+
+#contactSubmitButton:hover .gradient-icon {
+    color: white;
+}
+
+.googlePolicyContainer {
+    font-size: 12px;
+    font-weight: 200;
+    color: #a4a4a4;
+}
+
+
+/* Definieren der Styles für unterschiedliche Bildschirmgrößen */
+
+
+/* For Smartphone */
+
+@media only screen and (max-width: 767px) {
+    section {
+        font-size: 1em;
+    }
+}
+
+
+/* For Tablet */
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+    section {
+        font-size: 1.2em;
+    }
+}
+
+
+/* For Tablet & Smartphone */
+
+@media screen and (max-width: 991px) {
+    .contact-container {
+        flex-direction: column;
+        align-items: center;
+    }
+    .contact-container * {
+        width: 100%;
+        max-width: 100%;
+    }
+}
