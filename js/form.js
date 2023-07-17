@@ -52,7 +52,7 @@ function setInvalid(inputElement, message) {
     inputElement.classList.add("invalid");
 }
 
-const url = "http://localhost:3000/contact";
+const url = "https://mango-frost-bestseller.glitch.me/contact";
 
 function postContactRequest(data) {
     // HTTP-POST-Request senden
